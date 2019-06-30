@@ -1,16 +1,18 @@
 <html>
   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Swim Fit HK</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <style>
       body {
         color: #fff;
   background: linear-gradient(-30deg, 
-    #58BEAA, #4B98BE, #3C79BE);
+   #65BE9F, #55BEBC, #3C79BE);
   background-size: 400% 400%;
-  -webkit-animation: Gradient 20s ease infinite;
-  -moz-animation: Gradient 20s ease infinite;
-  animation: Gradient 20s ease infinite;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -48,41 +50,49 @@
     background-position: 0% 50%
   }
 }
-      
-      p {
+     p {
         font-family: 'Roboto Slab', serif;
         font-size: 22px;
         line-height: 35px;
         padding: 0px;
         letter-spacing: 1px;
+        text-align: left;
       }
       .box {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 40px;
+        margin: 30px 5px 5px 5px;
       }
       .box div {
-        width: 550px;
+        max-width: 550px;
       }
      .logo-swim {
+        text-align: left;
         font-size: 90px;
-        letter-spacing: 3px;
-        font-family: 'impact';
+        letter-spacing: 1px;
+        font-family: 'impact', 'helvetica';
+        font-weight: 900;
       }
      .logo-fit {
+        text-align: left;
         font-size: 80px;
         font-family: 'verdana';
         letter-spacing: 2px;
         padding: 0 0 0 5px;
+      }
+      .logo {
+        word-wrap: break-word;
+        line-height: 78px;
       }
     </style>
   </head>
   <body>
     <div class="box">
       <div>
-        <p><span class="logo-swim">SWIM</span><span class="logo-fit">fit</span></p>
+        <p class="logo"><span class="logo-swim">SWIM</span>
+        <span class="logo-fit">fit</span></p>
       </div>
       <div class="info">
         <p>A breath of fresh air. Professional one-on-one training at local pools &amp; beaches in Hong Kong.</p>
